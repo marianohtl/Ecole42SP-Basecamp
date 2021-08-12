@@ -1,0 +1,19 @@
+
+
+gcc -Wall -Wextra -Werror
+
+norminette -R CheckForbiddenSourceHeader
+
+
+- - - - - - - - 
+
+
+- standard input
+- standard output
+- standard file
+ 
+ 
+ 
+gcc funcao > arquivo_metodo_main -o saida.out
+
+norminete ft_putchar.c

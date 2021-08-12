@@ -1,0 +1,6 @@
+Shell01 - ex04
+ifconfig | grep ether | sed --expression 's/  t.*//g' | sed --expression 's/.*er //g'
+ifconfig > captura informações de rede da máquina local
+grep ether > capturando as linhas que possuem [ether]  (padrão escolhido para encontrar o mac address) 
+sed --expression 's/  t.*//g' | sed --expression 's/.*er //g' > removendo excessos com um regex malucão
+

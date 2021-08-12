@@ -1,0 +1,41 @@
+Shell01 - ex06
+
+ls -l | grep -n "" | grep ^[0-9]*[13579]: | tr -d ^[0-9]*[13579]:
+
+ls -l > lista todos os arquivos no formato de long listing 
+
+| > segue com os comandos da pipeline
+
+grep [padrão]> filtra cada linha de texto que ele recebe de acordo com o padrão especificado 
+
+grep -n [padrão]> filtra cada linha de texto que ele recebe de acordo com o padrão especificado, >>> coloca no começo de cada linha a enumeração, desde o início da linha começando com o 1
+
+**Caso passe o padrão, usando "", ele lista todas as linhas enumeradas**
+
+grep ^[0-9]*[13579]:    >> filtrar as linhas ímpares
+
+^ > início da linha 
+[caracteres] > qualquer um dos caracteres especificado dentro dos colchetes
+
+[0-9] > intervalo de dígitos de 0 à 9
+
+* > qualquer quantidade de caracteres especificado anteriormente
+a* > qualquer quantidade de a
+[0-9]* > qualquer quantidade de digitos de 0-9
+
+[13579] > segue o padrão de qualquer dígito ímpar
+
+tr -d [padrão] > elimina o padrão encontrado no texto 
+
+
+
+
+
+
+
+| grep [.*7][02468]: | sed --expression 's/^[0-9]*[02468]://g'
+
+
+ 
+
+| grep \(.\|\n\)\*^15.\* | grep ^7:\(.\|\n\)\*

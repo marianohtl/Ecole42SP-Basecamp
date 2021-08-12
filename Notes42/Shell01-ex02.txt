@@ -1,0 +1,17 @@
+Shell01 - ex02
+
+find . -type f -name "*.sh" | sed --expression 's/.sh$//g' | sed --expression 's/[.][\/]//g'
+
+
+find . -type f > lista qualquer arquivo a partir da pasta atual
+
+-name "*.sh" > filtra a busca para qualquer coisa que termina com .sh
+
+| pipeline
+
+sed --expression 's/.sh$//g' > regex que remove toda linha que termina com .sh (s/parametro_busca_valor_que_será_substituído/valor_da_troca/g)
+
+sed --expression 's/^[.][\/]//g' > regex que identifica tudo que termina com ./ e o substitui pelo valor definido anteriormente
+
+
+

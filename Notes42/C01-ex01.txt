@@ -1,0 +1,22 @@
+C00 - ex01
+
+a > 97  
+z > 122 
+
+- - - - 
+
+* puxa o valor da informação da memória
+
+& puxa o endereço da variável na memória
+
+
+while interno	|	while do meio 
+				|	
+012				|	023
+				|	
+013				|	
+				|	
+014				|	
+				|	
+015				|	
+

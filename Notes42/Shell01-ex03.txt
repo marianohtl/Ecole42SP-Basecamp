@@ -1,0 +1,8 @@
+Shell01 - ex03
+
+find -type f,d > lista arquivos do tipo file e directory
+
+wc > conta o número de linhas, palavras e bites
+
+wc -l > conta o número de linhas
+

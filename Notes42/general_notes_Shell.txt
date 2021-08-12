@@ -1,0 +1,84 @@
+
+link simbólico 
+  
+-uuugggooo
+rwx
+
+ cd ~/.ssh/
+ cat id_rsa.pu
+
+
+chmod u=r,g=xr,o=xr testShell00
+
+echo [conteudoDoArquivo] > [nomeArquivo]
+
+mkdir nomeDiretorio  
+
+chmod u=r,g=xr,o=xr testShell00
+
+tar -cf testShell00.tar testShell00
+
+ln test5 test6
+
+git log --pretty=%H -n5
+
+r-x
+---
+r--
+
+ln -s test0 > test6
+
+ls -a
+
+ls -Fu --format=commas
+
+ls -pum
+
+
+u g o a
+
+
+bash git_commit.sh | cat -e
+ 
+ 
+git ls-files . -i --exclude-standard --others
+
+
+cmod x clean
+
+find -type f -regex ".*/#.*#\|.*/.*~\|.*/#" -delete
+
+-h
+
+para verificar se é um arquivo do tipo 42
+file -m ft_magic.mgc *
+
+para compilar 
+file -C -m ft_magic
+
+Dá uma pesquisada sobre magic file.
+Pelo que entendi, são linhas de teste que te permitem definir um tipo de arquivo.
+
+
+tar xf 
+
+
+mudar os horários ~ 
+
+
+tar -xvf testShell00.tar
+
+
+patch a sw.diff -o b
+
+
+groups $FT_USER | sed --expression 's/ /,/g'
+export FT_USER=staff
+ ./print_groups.sh
+export FT_USER=student
+ ./print_groups.sh
+ 
+ touch -t -h 201301291810 myfile.txt
+ 
+ 
+ azaine

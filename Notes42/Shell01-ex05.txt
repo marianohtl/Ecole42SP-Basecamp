@@ -1,0 +1,21 @@
+Shell01 - ex05
+touch \"\\\?\$\*\'MaRViN\'\*\$\?\\\"
+ 
+Criando um arquivo utilizando \ para poder usar caracteres que possuem funções especiais no terminal.
+
+\"
+\'
+\?
+\\
+\$
+\*
+
+touch -t 202110021221 \"\\\?\$\*\'MaRViN\'\*\$\?\\\"
+
+> ugoa 
+chmod g=x,o=r \"\\\?\$\*\'MaRViN\'\*\$\?\\\" 
+
+ls -lRa *MaRV* | cat -e
+
+git commit -m"adding exercise 05 <using \ for special characters and change permissions and date>"
+

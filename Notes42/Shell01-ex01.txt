@@ -1,0 +1,28 @@
+Shell01 - ex01
+
+groups $FT_USER | sed --expression 's/ /,/g'
+
+export FT_USER=staff
+
+./print_groups.sh
+
+export FT_USER=student
+
+./print_groups.sh
+
+
+
+Quando faço o export, cria ou sobrescreve a variável de ambiente.
+export FT_USER=student
+export FT_USER=staff
+
+
+. > qualquer caracter - (o ponto não inclui o /n)
+
+* > qualquer quantidade do caracter anterior
+
+^ > começa com 
+
+
+.*texto > qualquer coisa em qualquer quantidade que termine com texto 
+texto.* > qualquer coisa em qualquer quantidade que comece com texto

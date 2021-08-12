@@ -1,0 +1,77 @@
+Shell01 - ex07
+
+cat /etc/passwd | 
+mostra o conteúdo do arquivo
+
+sed --expression 's/:.*//g' | 
+filtra conforme primeiro argumento e substitui / remove, conforme o segundo
+
+:.* seleciona tudo que começa com dois pontos
+
+grep -n . |
+
+enumera todas as linhas 
+
+
+grep ^[0-9]*[02468]: |
+
+filtra conforme padrão
+
+^ início da linha 
+[0-9]*  range de 0-9 com qualquer quantidade
+[02468]: seguido do padrão par com término de :
+
+
+sed --expression 's/^[0-9]*[02468]://g' |
+
+remove o padrão anterior (segundo argumento vazio)
+
+rev |
+
+escreve os caracteres das linhas em ordem inversa
+
+sort -r  |
+
+organiza em order decrescente a ordem das linhas
+
+grep -n .  |
+
+
+head -n 15 |
+
+filtra as 15 primeiras linhas (ft_line2)
+
+tail -n 
+
+filtra as n' últimas linhas
+
+$(expr 15 - 7 + 1) (ft_line1, ft_line2)
+
+calcula uma expressão da diferença do final para o inicial , somando após o inicia 
+
+tr '\n' ',' |
+
+substitui a quebra de linha (\n) por , 
+
+sed --expression 's/,/, /g' |
+
+substitui as , por , + ' '
+
+sed --expression 's/, $/./g' 
+
+substitui a última , + ' ' por ponto
+
+
+
+cat /etc/passwd |
+sed --expression 's/:.*//g' |
+grep -n . |
+grep ^[0-9]*[02468]: |
+sed --expression 's/^[0-9]*[02468]://g' |
+rev |
+sort -r  |
+head -n $FT_LINE2 |
+tail -n $(expr $FT_LINE2 - $FT_LINE1 + 1) |
+tr '\n' ',' |
+sed --expression 's/,/, /g' |
+sed --expression 's/, $/./g' 
